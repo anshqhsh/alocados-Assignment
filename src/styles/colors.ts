@@ -1,0 +1,6 @@
+export const colors = {
+  BACKGROUND_COLOR: '#F0F4FA',
+  BLUE_BTN_COLOR: '#0053F4',
+  RED_CANCEL_COLOR: '#DB3645',
+  GRAY_HOBER_COLOR: '#DBE2EF',
+}
