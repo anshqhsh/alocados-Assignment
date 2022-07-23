@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import Login from 'routes/Login/Login'
+import { colors } from 'styles/colors'
 import './App.css'
 
 const AppContainer = styled.div`
@@ -8,6 +9,7 @@ const AppContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: ${colors.BACKGROUND_COLOR};
 `
 
 const App = () => {
