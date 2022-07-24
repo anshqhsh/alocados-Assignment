@@ -51,8 +51,12 @@ const Login = () => {
                 borderRadius: '8px 8px 0px 0px',
                 boxShadow: '0px 12px 24px rgba(0, 83, 244, 0.12)',
               },
+              '& .MuiFilledInput-input:hover': {
+                background: '#F9FBFF',
+              },
             },
           ]}
+          autoFocus
         />
         <TextField
           margin='normal'
