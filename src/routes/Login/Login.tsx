@@ -3,7 +3,6 @@ import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import { borderRadius, fontWeight, lineHeight } from '@mui/system'
 import { createTheme, ThemeProvider, Typography } from '@mui/material'
 
 const theme = createTheme()
@@ -35,9 +34,11 @@ const Login = () => {
         <TextField
           margin='normal'
           fullWidth
-          id='email'
+          name='email'
           variant='filled'
           label='이메일'
+          type='email'
+          id='email'
           sx={[
             {
               mt: 0,
@@ -45,11 +46,13 @@ const Login = () => {
             },
             {
               '& .MuiFilledInput-root': { background: '#F9FBFF', borderRadius: '8px 8px 0px 0px' },
-              '& .MuiFilledInput-input:focus': { boxShadow: '0px 12px 24px rgba(0, 83, 244, 0.12)' },
+              '& .MuiFilledInput-input:focus': {
+                background: '#F9FBFF',
+                borderRadius: '8px 8px 0px 0px',
+                boxShadow: '0px 12px 24px rgba(0, 83, 244, 0.12)',
+              },
             },
           ]}
-          name='email'
-          autoFocus
         />
         <TextField
           margin='normal'
@@ -57,17 +60,21 @@ const Login = () => {
           name='password'
           variant='filled'
           label='비밀번호'
+          type='password'
+          id='password'
           sx={[
             {
               mb: 6,
             },
             {
               '& .MuiFilledInput-root': { background: '#F9FBFF', borderRadius: '8px 8px 0px 0px' },
-              '& .MuiFilledInput-input:focus': { boxShadow: '0px 12px 24px rgba(0, 83, 244, 0.12)' },
+              '& .MuiFilledInput-input:focus': {
+                background: '#F9FBFF',
+                borderRadius: '8px 8px 0px 0px',
+                boxShadow: '0px 12px 24px rgba(0, 83, 244, 0.12)',
+              },
             },
           ]}
-          type='password'
-          id='password'
         />
         <Button type='submit' fullWidth variant='contained' sx={{ height: 64 }} size='large'>
           로그인
